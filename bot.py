@@ -158,7 +158,7 @@ async def upload(client, message):
     try:
         files = {'file': open(sed, 'rb')}
         await m.edit("**Uᴘʟᴏᴀᴅɪɴɢ ᴛᴏ AɴᴏɴFIʟᴇs Sᴇʀᴠᴇʀ Pʟᴇᴀsᴇ Wᴀɪᴛ**")
-        callapi = requests.post("https://api.anonfiles.com/upload", files=files)
+        callapi = requests.post("https://api.letsupload.cc/upload", files=files)
         text = callapi.json()
         output = f"""
 <u>**Fɪʟᴇ Uᴘʟᴏᴀᴅᴇᴅ Tᴏ AɴᴏɴFɪʟᴇs**</u>

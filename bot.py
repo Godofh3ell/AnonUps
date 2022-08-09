@@ -1,21 +1,21 @@
 #    Copyright (C) 2021 - Avishkar Patil | @AvishkarPatil
 
-
 import os
 import sys
 import time
 import logging
 import pyrogram
-import aiohttp
 import asyncio
 import requests
-import aiofiles
+from pySmartDL import SmartDL
 from random import randint
 from progress import progress
 from config import Config
 from pyrogram.errors import UserNotParticipant, UserBannedInChannel
 from pyrogram import Client, filters, idle
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery, InlineQuery, InputTextMessageContent
+
+
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
